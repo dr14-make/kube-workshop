@@ -63,3 +63,21 @@ A Deployment is the preferred way to deploy an application inside a pod. It is a
 StatefulSet is the controller that manages the deployment and scaling of a set of Stateful pods. A stateful pod in Kubernetes is a pod that requires persistent storage and a stable network identity to maintain its state all the time, even during pod restarts or rescheduling. These pods are commonly used for stateful applications such as databases or distributed file systems as these require a stable identity and persistent storage to maintain data consistency.
 
 # Environments and secrets
+
+```
+echo -n 'MakeSecret' | openssl base64
+
+```
+
+# Service Account
+
+A service account provides an identity for processes that run in a Pod, and maps to a ServiceAccount object. When you authenticate to the API server, you identify yourself as a particular user. Kubernetes recognises the concept of a user, however, Kubernetes itself does not have a User API. (we use service accounts to authorise ourself with AWS)
+
+# Horizontal Pod Autoscaling
+In Kubernetes, a HorizontalPodAutoscaler automatically updates a workload resource (such as a Deployment or StatefulSet), with the aim of automatically scaling the workload to match demand.
+
+# Ingress
+
+An API object that manages external access to the services in a cluster, typically HTTP.
+Ingress may provide load balancing, SSL termination and name-based virtual hosting.
+Example nginx, traefic, cloudflare e.t.c
