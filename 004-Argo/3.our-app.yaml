@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/dr14-make/kube-workshop.git
     targetRevision: HEAD
-    path: 002/my-test-app
+    path: 002-Helm/my-test-app
   destination:
     server: https://kubernetes.default.svc
     namespace: our-app
