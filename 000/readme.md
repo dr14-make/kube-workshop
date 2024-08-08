@@ -45,13 +45,3 @@ helm init
     * Install argo
     * Deploy our simple application through argo
 4. Learn how we do it in Make
-5. If time left:
-    * Reverse Proxy and how to use it
-        * traefik
-        * cloudflare
-    * Serverles locally
-        * install and configure KNative
-        * Deploy a hello-world serverles app
-        * ArgoNize this app
-        * Install VisualStudio Code server serverless
-        * set up all needed ingresses to get a server of the dream

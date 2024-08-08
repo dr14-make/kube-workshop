@@ -62,6 +62,14 @@ A Deployment is the preferred way to deploy an application inside a pod. It is a
 
 StatefulSet is the controller that manages the deployment and scaling of a set of Stateful pods. A stateful pod in Kubernetes is a pod that requires persistent storage and a stable network identity to maintain its state all the time, even during pod restarts or rescheduling. These pods are commonly used for stateful applications such as databases or distributed file systems as these require a stable identity and persistent storage to maintain data consistency.
 
+# ConfigMaps
+
+ConfigMaps
+A ConfigMap is an API object used to store non-confidential data in key-value pairs. Pods can consume ConfigMaps as environment variables, command-line arguments, or as configuration files in a volume.
+
+A ConfigMap allows you to decouple environment-specific configuration from your container images, so that your applications are easily portable.
+
+
 # Environments and secrets
 
 ```
